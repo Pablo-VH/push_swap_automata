@@ -6,7 +6,7 @@
 /*   By: pavicent <pavicent@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/29 13:02:37 by pavicent          #+#    #+#             */
-/*   Updated: 2024/07/29 13:02:39 by pavicent         ###   ########.fr       */
+/*   Updated: 2025/03/19 09:30:58 by pavicent         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,6 @@
 # include "libft.h"
 # include "ft_printf.h"
 # include "push_swap_common.h"
-
 
 ///////////////////// SORTING /////////////////////
 

@@ -34,7 +34,7 @@ int	instructions(t_stack *stack_a, t_stack *stack_b, char *line)
 		reverse_rotate(stack_a, 'a', FALSE);
 	else if (ft_strncmp(line, "rrb", 5) == 0
 		|| ft_strncmp(line, "rrb\n", 5) == 0)
-		reverse_rotate(stack_b, 'b',FALSE);
+		reverse_rotate(stack_b, 'b', FALSE);
 	else if (ft_strncmp(line, "sa", 5) == 0 || ft_strncmp(line, "sa\n", 5) == 0)
 		swap(stack_a, 'a', FALSE);
 	else if (ft_strncmp(line, "sb", 5) == 0 || ft_strncmp(line, "sb\n", 5) == 0)

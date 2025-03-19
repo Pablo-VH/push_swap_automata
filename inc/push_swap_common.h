@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   push_swap_common.h                                 :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: pavicent <pavicent@student.42madrid>       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/03/19 09:31:17 by pavicent          #+#    #+#             */
+/*   Updated: 2025/03/19 09:34:36 by pavicent         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef PUSH_SWAP_COMMON_H
 # define PUSH_SWAP_COMMON_H
 
@@ -16,15 +28,17 @@ typedef int			t_bool;
 # define FALSE 0
 
 // Definición de estructuras comunes
-typedef struct s_node {
-    int				data;
+typedef struct s_node
+{
+	int				data;
 	int				s_index;
-    struct s_node	*next;
+	struct s_node	*next;
 }					t_node;
 
-typedef struct s_stack {
-    t_node	*head;
-    int		size;
+typedef struct s_stack
+{
+	t_node	*head;
+	int		size;
 }			t_stack;
 
 ///////////////////// SORTING /////////////////////

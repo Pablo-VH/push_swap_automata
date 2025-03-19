@@ -12,6 +12,18 @@
 
 #include "push_swap_common.h"
 
+/*int	get_state(int state, int int_token)
+{
+	const int	matrix[][5] = {
+		{1, 2, 3, 4}, // 0 inicial
+		{1, 1, 1, 1}, // 1 error
+		{1, 2, 3, 4}, // 2 space
+		{1, 1, 1, 4}, // 3 symbols
+		{1, 2, 1, 4}, // 4 number
+	}; //*	S  +- N
+	return (matrix[state][int_token]);
+}*/
+
 int	str_isdigit(char *argv)
 {
 	int	i;
@@ -28,13 +40,14 @@ int	str_isdigit(char *argv)
 
 int	get_state(int state, int int_token)
 {
-	int matrix[][5] = {
-		{1, 2, 3, 4}, // 0 inicial
-		{1, 1, 1, 1}, // 1 error
-		{1, 2, 3, 4}, // 2 space
-		{1, 1, 1, 4}, // 3 symbol
-		{1, 2, 1, 4}, // 4 number
-	}; //*	S  +- N
+	const int	matrix[][5] = {
+	{1, 2, 3, 4},
+	{1, 1, 1, 1},
+	{1, 2, 3, 4},
+	{1, 1, 1, 4},
+	{1, 2, 1, 4},
+	};
+
 	return (matrix[state][int_token]);
 }
 
@@ -47,7 +60,7 @@ int	choose_state(int prev, char c)
 	state = prev;
 	if (ft_isspace(c))
 		pos = 1;
-	if (c == '+' || c  == '-')
+	if (c == '+' || c == '-')
 		pos = 2;
 	if (ft_isdigit(c))
 		pos = 3;
@@ -60,7 +73,7 @@ int	check_syntax(char **argv)
 	int	i;
 	int	j;
 	int	state;
-	
+
 	i = 1;
 	state = 0;
 	while (argv[i])
