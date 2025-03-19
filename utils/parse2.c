@@ -20,7 +20,7 @@
 		{1, 2, 3, 4}, // 2 space
 		{1, 1, 1, 4}, // 3 symbols
 		{1, 2, 1, 4}, // 4 number
-	}; //*	S  +- N
+	}; 	 *	S  +- N
 	return (matrix[state][int_token]);
 }*/
 
@@ -75,10 +75,10 @@ int	check_syntax(char **argv)
 	int	state;
 
 	i = 1;
-	state = 0;
 	while (argv[i])
 	{
 		j = 0;
+		state = 0;
 		while (argv[i][j])
 		{
 			state = choose_state(state, argv[i][j]);
