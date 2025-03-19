@@ -6,7 +6,7 @@
 /*   By: pavicent <pavicent@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/30 11:05:47 by pavicent          #+#    #+#             */
-/*   Updated: 2024/07/30 11:05:48 by pavicent         ###   ########.fr       */
+/*   Updated: 2025/03/19 09:28:06 by pavicent         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ int	get_state(int state, int int_token)
 	int matrix[][5] = {
 		{1, 2, 3, 4}, // 0 inicial
 		{1, 1, 1, 1}, // 1 error
-		{1, 2, 1, 4}, // 2 space
+		{1, 2, 3, 4}, // 2 space
 		{1, 1, 1, 4}, // 3 symbol
 		{1, 2, 1, 4}, // 4 number
 	}; //*	S  +- N
