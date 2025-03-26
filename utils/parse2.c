@@ -41,11 +41,11 @@ int	str_isdigit(char *argv)
 int	get_state(int state, int int_token)
 {
 	const int	matrix[][5] = {
-	{1, 2, 3, 4},
-	{1, 1, 1, 1},
-	{1, 2, 3, 4},
-	{1, 1, 1, 4},
-	{1, 2, 1, 4},
+	{ERROR, SPACE, SYMBOLS, NUMBER}, //0 = INIT
+	{ERROR, ERROR, ERROR, ERROR}, //1 = ERROR
+	{ERROR, SPACE, SYMBOLS, NUMBER}, //2 = SPACE
+	{ERROR, ERROR, ERROR, NUMBER}, //3 = SYMBOLS
+	{ERROR, SPACE, SYMBOLS, NUMBER}, //4 = NUMBER
 	};
 
 	return (matrix[state][int_token]);

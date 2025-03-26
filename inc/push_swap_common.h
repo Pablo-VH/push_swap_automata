@@ -41,6 +41,15 @@ typedef struct s_stack
 	int		size;
 }			t_stack;
 
+typedef enum s_define_aut
+{
+	INIT,
+	ERROR,
+	SPACE,
+	SYMBOLS,
+	NUMBER
+}	t_define_aut;
+
 ///////////////////// SORTING /////////////////////
 
 int		ft_index(int n, int *arr);
